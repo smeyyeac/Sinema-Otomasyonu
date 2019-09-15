@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D115FBBD-3875-4956-AF11-466BBB74B477}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sinema</RootNamespace>
+    <AssemblyName>Sinema</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anasayfaController.cs" />
+    <Compile Include="biletcontroller.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="salonController.cs" />
+    <Compile Include="yeniBiletForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yeniBiletForm.Designer.cs">
+      <DependentUpon>yeniBiletForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFormu.Designer.cs">
+      <DependentUpon>LoginFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anasayfaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfaForm.Designer.cs">
+      <DependentUpon>anasayfaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="idController.cs" />
+    <Compile Include="bilet.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="biletDegisiklikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biletDegisiklikForm.Designer.cs">
+      <DependentUpon>biletDegisiklikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salonForm.Designer.cs">
+      <DependentUpon>salonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinemaDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinemaDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SinemaDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinemaDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="yeniBiletForm.resx">
+      <DependentUpon>yeniBiletForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFormu.resx">
+      <DependentUpon>LoginFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anasayfaForm.resx">
+      <DependentUpon>anasayfaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="biletDegisiklikForm.resx">
+      <DependentUpon>biletDegisiklikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salonForm.resx">
+      <DependentUpon>salonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SinemaDBDataSet.xsc">
+      <DependentUpon>SinemaDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SinemaDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinemaDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SinemaDBDataSet.xss">
+      <DependentUpon>SinemaDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SinemaDBDataSet1.xsc">
+      <DependentUpon>SinemaDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SinemaDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinemaDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SinemaDBDataSet1.xss">
+      <DependentUpon>SinemaDBDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\1 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\IMG_0243-696x435.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\depositphotos_25938451-stock-photo-old-motion-picture-film-reel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\grunge-scratched-film-strip-reel-background-dirty-35264187.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\147.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\42-min.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\42_640x409.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\42_857x415.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\42_1003x530.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\16_1003x530.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77226875-cinema-time-vector-logo-symbol-or-emblem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\zx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\depositphotos_78838910-stock-illustration-cinema-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\sahne-perdesi11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\14135582.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resim\asd.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

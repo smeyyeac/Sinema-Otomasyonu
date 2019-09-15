@@ -1,5 +1,5 @@
 # sinema-bilet-satis-otomasyonu
-# sinema-bilet-satis-otomasyonu
-# Sinema Otomasyonu
-# Sinema-Otomasyonu
-# Sineme-Otomasyonu
+
+mysql veritabanı kullanılarak yapıldı.
+C#, Visual studio ortamı.
+Çok katmanlı mimari.
